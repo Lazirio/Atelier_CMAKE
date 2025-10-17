@@ -1,0 +1,136 @@
+ 
+ L'éditeur nano est conçu pour reproduire les fonctions et la facilité
+ d'utilisation de l'éditeur Pico de l'Université de Washington. Il
+ comporte quatre sections principales : la ligne du haut affiche la
+ version du programme, le fichier actuellement en cours d'édition et s'il
+ a été modifié ou non. En dessous se trouve la fenêtre principale
+ d'édition qui affiche le fichier en cours de modification. La ligne
+ d'état est la troisième ligne en partant du bas, elle affiche les
+ messages importants. Les deux dernières lignes affichent les raccourcis
+ les plus couramment utilisés.
+
+ Les raccourcis sont représentés de la façon suivante : la touche
+ « Contrôle » est représentée par l'accent circonflexe (^) et peut être
+ entrée soit via la touche Contrôle (Ctrl), soit en pressant 2 fois la
+ touche « Échap. ». Les séquences d'échappement sont représentées par le
+ symbole « Méta » (M) et peuvent être entrées via les touches « Échap. »,
+ « Alt. » ou « Méta » selon la configuration de votre clavier. Appuyer 2
+ fois sur la touche « Échap. » puis entrer un nombre à 3 chiffres entre
+ 000 et 255 insère le caractère de code correspondant. Les raccourcis
+ suivantes sont disponibles dans la fenêtre principale de l'éditeur. Les
+ raccourcis pouvant être utilisées comme alternatives sont affichées entre
+ parenthèses :
+
+^G     (F1)      Afficher ce message
+^X     (F2)      Fermer l'espace en cours / Quitter nano
+^O     (F3)      Écrire le fichier en cours (ou la zone marquée) sur disque
+^R     (Ins)     Insérer un fichier dans l'espace courant (ou un nouvel espace)
+
+^F     (^W)      Rechercher vers l'avant une chaîne ou une exp. rationnelle
+^\     (M-R)     Remplacer une chaîne ou une expression rationnelle
+^K     (F9)      Couper ligne courante (ou zone marquée) vers le presse-papiers
+^U     (F10)     Coller le contenu du presse-papiers à la position du curseur
+
+^T               Exécuter une fonction ou une commande externe
+^J     (F4)      Justifier le paragraphe courant
+
+^C     (F11)     Indiquer la position du curseur
+^/     (M-G)     Aller à la ligne et à la colonne indiquées
+
+M-U              Annuler la dernière opération
+M-E              Refaire la dernière opération annulée
+
+M-A    (^6)      Marquer le texte depuis la position du curseur
+M-6    (M-^)     Copier la ligne cour. (ou zone marquée) dans le presse-papiers
+
+M-]              Aller au crochet correspondant
+
+^B     (^Q)      Rechercher vers l'arrière une chaîne ou une exp. rationnelle
+M-B    (M-Q)     Rechercher la prochaine occurrence en avant
+M-F    (M-W)     Rechercher la prochaine occurrence en arrière
+
+◂                Reculer d'un caractère
+▸                Avancer d'un caractère
+^◂     (M-Space) Reculer d'un mot
+^▸     (^Space)  Avancer d'un mot
+^A     (Home)    Aller au début de la ligne courante
+^E     (End)     Aller à la fin de la ligne courante
+
+^P     (▴)       Aller à la ligne précédente
+^N     (▾)       Aller à la ligne suivante
+M-▴    (M--)     Remonter d'une ligne sans déplacer le curseur sur le texte
+M-▾    (M-+)     Descendre d'une ligne sans déplacer le curseur sur le texte
+
+^▴     (M-7)     Aller au bloc de texte précédent
+^▾     (M-8)     Aller au bloc de texte suivant
+M-(    (M-9)     Aller au début du paragraphe, puis à celui du précédent
+M-)    (M-0)     Aller à la fin du paragraphe, puis à celle du suivant
+
+M-Home           Aller à la première ligne affichée
+M-End            Aller à la dernière ligne affichée
+
+^Y     (PgUp)    Monter d'un écran
+^V     (PgDn)    Descendre d'un écran
+M-\    (^Home)   Aller à la première ligne du fichier
+M-/    (^End)    Aller à la dernière ligne du fichier
+
+M-◂    (M-,)     Basculer vers l'espace précédent
+M-▸    (M-.)     Basculer vers l'espace suivant
+
+^I     (Tab)     Insère une tabulation ici (ou met en retrait les lignes
+		   marquées)
+^M     (Enter)   Insérer un passage à la ligne à la position du curseur
+
+^H     (Bsp)     Supprimer le caractère à la gauche du curseur
+^D     (Del)     Supprimer le caractère sous le curseur
+
+M-Bsp  (Sh-^Del) Supprimer en arrière du curseur au début du mot
+^Del             Supprimer en avant du curseur à la fin du mot
+M-T              Couper du curseur à la fin du fichier
+
+M-J              Justifier le fichier entier
+M-D              Compter le nombre de lignes, de mots et de caractères
+M-V              Insérer le prochain caractère tel quel
+
+M-}              Mettre en retrait la ligne courante (ou les lignes marquées)
+M-{    (Sh-Tab)  Diminuer retrait ligne courante (ou lignes marquées)
+
+M-3              Commenter/décommenter ligne courante (ou lignes marquées)
+^]               Essayer de compléter le mot courant
+
+M-:              Début/arrêt d'enregistrement d'une macro
+M-;              Lancer la dernière macro enregistrée
+
+M-Del            Effacer la ligne courante (ou la zone marquées)
+
+M-Ins  (M-")     Placer ou enlever une ancre sur la ligne courante
+M-PgUp           Saut arrière vers l'ancre la plus proche
+M-PgDn (M-')     Saut avant vers l'ancre la plus proche
+
+F12              Appeler le correcteur orthographique (si dispo.)
+		 Appeler l'analyseur statique (si dispo.)
+		 Appeler un programme pour formater/arranger/manipuler cet
+		   espace
+
+		 Suspendre l'éditeur (retour à l'invite de commande)
+^L               Rafraîchir (redessiner) l'écran courant
+
+		 Centrer la ligne à l'emplacement du curseur
+^L               Place la ligne courante au centre, puis en haut, puis en bas
+
+^S               Écrire sans poser de question
+
+M-Z		 Interface masquée (commutateur)
+M-X		 Mode aide (commutateur)
+M-C		 Afficher la position du curseur (commutateur)
+M-S		 Affichage automatique sur plusieurs lignes (commutateur)
+M-N		 Numérotation des lignes (commutateur)
+M-P		 Afficher les blancs (commutateur)
+M-Y		 Coloration syntaxique (commutateur)
+
+M-H		 Touche « Début » intelligente (commutateur)
+M-I		 Retrait auto. (commutateur)
+M-K		 Couper jusqu'en fin de ligne (commutateur)
+M-L		 Passer à la ligne automatiquement (commutateur)
+M-O		 La touche tabulation ajoute des espaces (commutateur)
+M-M		 Utiliser la souris (commutateur)
