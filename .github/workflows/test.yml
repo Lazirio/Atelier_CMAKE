@@ -27,7 +27,7 @@
           path: build/report.txt      # <-- le fichier à récupérer
           retention-days: 14          # optionnel
 
-      - name: Job summary (facultatif mais pratique)
+      - name: Job summary 
         run: |
           echo "### Résultat du test *add*" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
